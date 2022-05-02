@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Nunito&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* font-family: 'Arimo', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    min-height:100vh;
+    transition: background  0.3s linear,color 0.3s linear;
+}
+input{
+    cursor: pointer;
+}
+
+body.dark{
+    background-color: #1f1f1f;
+    color: white;
+}
+label{
+    user-select: none;
+    cursor:pointer;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    
+}
+
+body.dark label{
+    background-color: aliceblue;
+    transition: background  0.3s linear,color 0.3s linear;
+
+}
+
+#toggle-container{
+    position: fixed;
+    top: 10px;
+    right:10px;
+  
+}
+
+input{
+    visibility: hidden;
+}
